@@ -2,5 +2,4 @@
 
 ## Me chupa dos huevos
 
-XD
-
+`printf("La concha de tu hermana");` 
