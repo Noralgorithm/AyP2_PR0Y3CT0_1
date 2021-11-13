@@ -1,5 +1,5 @@
 # AyP2_PR0Y3CT0_1
 
-## Elliot Larez
+## Larez trick
 
 facilito el tutorial 
