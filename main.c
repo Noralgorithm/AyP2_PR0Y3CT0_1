@@ -213,15 +213,22 @@ int main(int argc, char *argv[]) {
         Hexa(v1);
         push(&stack,v1);
     }else
+    //FUNCIÓN ALMACENAR EN MEMORIA//
     if(strcmp(input, "STO")==0){
         v1=pop(&stack);
         memory=v1;
         printf("Se ha realizado el almacenado con exito\n");
-        push(&stack,memory);
     }else
+    //FUNCIÓN RECORDAR VALOR DE MEMORIA// 
     if(strcmp(input, "MRCL")==0){
-        valor2=memory;
-        print(valor2,memory);
+        if(memory == 0){
+            printf("Memoria vacia\n");
+            }
+        else{
+            push(&stack,memory);
+            printf("El valor %2.f fue devuelto a la pila con éxito\n" ,memory);
+            memory = 0;
+            }
     }else
     if(strcmp(input, "S+")==0){
         v1=pop(&stack);
